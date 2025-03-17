@@ -343,3 +343,12 @@ body {
     text-align: center;
     margin-top: 2%;
 }
+/* RESPONSIVE FOOTER */
+@media (max-width: 470px) {
+    #copyright {
+        margin-top: 0px;
+        background-color: #7695f0;
+        margin-top: -5px;
+        padding-top: 3px;
+    }
+}
