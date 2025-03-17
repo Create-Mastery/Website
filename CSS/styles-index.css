@@ -184,7 +184,8 @@ body {
     height: 100px;
     border: #7695f0 3px solid;
     border-radius: 20px;
-    background: url('../sfondo-titoli.png') no-repeat center/cover;
+    background: url('E:/Programmazione/Html/Sito-Create/prototipo/Immagini/sfondo-titoli.png')
+        no-repeat center/cover;
 }
 #immaginedestra {
     position: absolute;
@@ -234,7 +235,8 @@ body {
 #finetesto {
     margin-left: 1.2%;
     margin-right: 25.2%;
-    background: url('../sfondo-titoli.png') no-repeat center/cover;
+    background: url('E:/Programmazione/Html/Sito-Create/prototipo/Immagini/sfondo-titoli.png')
+        no-repeat center/cover;
     padding-top: 0.08px;
     padding-bottom: 0.08px;
     border: #7695f0 3px solid;
