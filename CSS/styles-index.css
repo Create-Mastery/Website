@@ -330,11 +330,13 @@ body {
 #socialcontent {
     text-align: center;
     width: 100%;
+    background-color: #7695f0;
 }
 #socialcontent a {
     color: white;
     text-decoration: none;
     font-size: 150%;
+    background-color: #7695f0;
 }
 .nomelink {
     float: bottom;
