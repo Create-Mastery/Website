@@ -345,7 +345,6 @@ body {
         align-items: center;
         width: 90%;
     }
-
     #titolofooter {
         font-size: 2rem;
     }
@@ -353,8 +352,10 @@ body {
     #socialcontent {
         flex-direction: column;
     }
-
     #socialcontent a {
         font-size: 1rem;
+    }
+    .linea {
+        display: none;
     }
 }
