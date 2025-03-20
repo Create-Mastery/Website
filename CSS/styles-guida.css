@@ -214,6 +214,10 @@ body {
     color: #7695f0;
     text-decoration: underline solid #7695f0;
 }
+ul li {
+    list-style-type: '- ';
+}
+/* SEZIONE 1 */
 .sezione1testo {
     margin-left: 29%;
     margin-top: 2.2%;
@@ -247,6 +251,28 @@ body {
     width: 25%;
     border: #7695f0 3px solid;
     border-radius: 20px;
+}
+#steamrecipe {
+    margin-left: 2%;
+    border: #7695f0 3px solid;
+    border-radius: 20px;
+    max-width: 100%;
+    height: 40%;
+    width: 40%;
+}
+#encasedchaindriverecipe {
+    margin-left: 2%;
+    border: #7695f0 3px solid;
+    border-radius: 20px;
+    height: 40%;
+    width: 40%;
+}
+#horizontalgearboxrecipe {
+    margin-left: 2%;
+    border: #7695f0 3px solid;
+    border-radius: 20px;
+    height: 40%;
+    width: 40%;
 }
 /* INTRO RESPONSIVE */
 @media (max-width: 1336px) {
@@ -287,6 +313,21 @@ body {
     }
     .titolo {
         margin-left: 2%;
+    }
+    #encasedchaindriverecipe,
+    #steamrecipe,
+    #shaftrecipe,
+    #encasedchaindrive,
+    #steamengine,
+    #boiler18,
+    #horizontalgearbox,
+    #horizontalgearboxrecipe {
+        width: 100%;
+        height: 100%;
+    }
+    #sezione1img {
+        width: 60%;
+        float: none;
     }
 }
 /*------------------------ FOOTER -------------------------*/
