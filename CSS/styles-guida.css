@@ -214,6 +214,16 @@ body {
     color: #7695f0;
     text-decoration: underline solid #7695f0;
 }
+.sezione1testo {
+    margin-left: 29%;
+    margin-top: 2.2%;
+    margin-right: 15%;
+    word-wrap: break-word;
+}
+.listasezione1 {
+    margin-top: 0%;
+    margin-left: 29.5%;
+}
 /*------------ IMMAGINI ------------*/
 .stress_speed_shaft_containers {
     float: bottom;
@@ -222,6 +232,21 @@ body {
     margin-left: 2%;
     height: 30%;
     width: 30%;
+}
+#boiler18 {
+    margin-left: 2.5%;
+    height: 60%;
+    width: 60%;
+    border: #7695f0 3px solid;
+    border-radius: 20px;
+}
+#sezione1img {
+    float: left;
+    margin-left: 2.5%;
+    height: 25%;
+    width: 25%;
+    border: #7695f0 3px solid;
+    border-radius: 20px;
 }
 /* INTRO RESPONSIVE */
 @media (max-width: 1336px) {

@@ -82,7 +82,7 @@
                 Nei capitoli sottostanti ci saranno le basi della Create (forza
                 rotazionale, misurata in SU, metodi di trasporto ecc).
             </p>
-            <p class="testointro">
+            <p class="testointro" id="stress-speed">
                 In questa pagina spiegheremo i vari metodi per produrre energia
                 cinetica.
             </p>
@@ -121,7 +121,7 @@
                     </div>
                 </li>
             </ul>
-            <p class="testointro">
+            <p class="testointro" id="shaft">
                 Per funzionare questi due blocchi hanno bisogno di una
                 connessione ad una "shaft" (albero motore) funzionante (ovvero
                 che gira).
@@ -133,6 +133,11 @@
                 <br />
                 Servono a collegare i macchinari che consumano SU a dei
                 generatori di SU, ma non sono l'unico.
+                <br />
+                <br />
+                Le shaft sono l'unico blocco della mod dove ci si può piazzare
+                un nastro trapostatore.
+                <br />
                 <br />
                 Ecco come è fatta una shaft:
             </p>
@@ -152,6 +157,86 @@
                     style="border: #7695f0 3px solid; border-radius: 20px; margin-left: 3%;"
                 />
             </div>
+            <h2 class="titolo">I VARI METODI PER GENERARE ENERGIA CINETICA</h2>
+            <p class="testointro">
+                Per generare energia cinetica ci sono 4 metodi:
+            </p>
+            <ol>
+                <li class="testointro">Motore a vapore;</li>
+                <li class="testointro">Multino a vento;</li>
+                <li class="testointro">Ruote d'acqua;</li>
+                <li class="testointro">Manovella;</li>
+            </ol>
+            <p class="testointro">
+                Ognuno di essi ha i suoi pro e contro, analizziamoli insieme:
+            </p>
+            <h2 class="titolo">MOTORE A VAPORE</h2>
+            <p class="testointro">
+                I motori a vapori sono la fonte di energia cinetica più potente
+                della mod.
+            </p>
+            <p class="testointro">
+                Infatti un motore a vapore di livello massimo può raggiungere i
+                294,912 SU.
+                <br />
+                Sì, ho detto livelli, la potenza dei motori a vapore (o anche
+                boiler) è misurata in livelli (oltre che in SU), come si può
+                intuire più è alto il livello più SU e RPM produce.
+            </p>
+            <p class="testointro">
+                Ecco un esempio di boiler al livello massimo:
+            </p>
+            <img
+                src="./Immagini/Boiler lvl 18.png"
+                alt="Motore a vapore livello 18"
+                id="boiler18"
+            />
+            <p class="testointro">
+                A primo impatto può sembrare confusionario, ma in realtà è molto
+                semplice da capire.
+            </p>
+            <p class="testointro">
+                Dividiamolo in sezioni così è più facile sia da capire che da
+                spiegare:
+            </p>
+            <ol>
+                <li class="testointro">Output SU e RPM;</li>
+                <li class="testointro">Boiler con blaze burners;</li>
+                <li class="testointro">Input acqua;</li>
+            </ol>
+            <h2 class="titolo">1) Output SU e RPM</h2>
+            <img
+                src="./Immagini/Sezione 1) output.png"
+                alt="Sezione 1 output"
+                id="sezione1img"
+            />
+            <p class="testointro sezione1testo">
+                Questa sezione è quella che si collegherà al sistema e sarà
+                quella che gli darà la potenza e, in certi casi, la velocità.
+            </p>
+            <p class="testointro sezione1testo">
+                Ci sono vari blocchi e ognuno ha la sua funzionalità:
+            </p>
+            <ol>
+                <li class="testointro sezione1testo listasezione1">
+                    18 motori a vapore;
+                </li>
+                <li class="testointro sezione1testo listasezione1">
+                    18 <a href="#shaft">shaft</a>;
+                </li>
+                <li class="testointro sezione1testo listasezione1">
+                    9 trasmissioni a catena rivestite;
+                </li>
+                <li class="testointro sezione1testo listasezione1">
+                    1 trasmissione orizzontale (gearbox);
+                </li>
+                <li class="testointro sezione1testo listasezione1">
+                    1 <a href="#stress-speed">tachimetro</a>;
+                </li>
+                <li class="testointro sezione1testo listasezione1">
+                    1 <a href="#stress-speed">stressometro</a>;
+                </li>
+            </ol>
         </div>
         <!------------------------------------------------ FOOTER ------------------------------------------------>
         <footer>
