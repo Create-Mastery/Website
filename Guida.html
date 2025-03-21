@@ -74,7 +74,7 @@
                 </ul>
             </nav>
         </header>
-        <!----------------------------------------------- INTRO ----------------------------------------------->
+        <!----------------------------------------------- GUIDA ----------------------------------------------->
         <div id="intro">
             <div id="introtitolosfondo">
                 <h1 id="titolointro">GUIDA: LE BASI | PT.1</h1>
@@ -91,7 +91,7 @@
                 Nei capitoli sottostanti ci saranno le basi della Create (forza
                 rotazionale, misurata in SU, metodi di trasporto ecc).
             </p>
-            <p class="testointro">
+            <p class="testointro" id="stress-speed">
                 In questa pagina spiegheremo i vari metodi per produrre energia
                 cinetica.
             </p>
@@ -100,17 +100,18 @@
                 prima di continuare consigliamo di leggere prima
                 <a href="index.html" target="_blank">l'introduzione</a>.
             </p>
+            <!------- FORZA CINETICA ------->
             <h1 class="titolo">FORZA ROTAZIONALE/CINETICA</h1>
             <p class="testointro">
                 La Create è basata sullla forza rotazionale (o anche cinetica).
                 <br />
                 Quest'ultima viene misurata in SU (stress unit) e la velocità di
-                rotazione in RPM (rotations per minute). Entrambi non si possono
-                vedere senza appositi blocchi:
+                rotazione in RPM (rotations per minute). I valori di entrambi
+                non si possono vedere senza appositi blocchi:
             </p>
             <ul style="list-style-type: none;">
                 <li class="testointro">
-                    - Uno stressometro:
+                    Uno stressometro:
                     <div class="stress_speed_shaft_containers">
                         <img
                             src="./Immagini/Stressometer.webp"
@@ -120,7 +121,7 @@
                     </div>
                 </li>
                 <li class="testointro">
-                    - Un tachimetro:
+                    Un tachimetro:
                     <div class="stress_speed_shaft_containers">
                         <img
                             src="./Immagini/Speedometer.webp"
@@ -130,11 +131,12 @@
                     </div>
                 </li>
             </ul>
-            <p class="testointro">
+            <p class="testointro" id="shaft">
                 Per funzionare questi due blocchi hanno bisogno di una
                 connessione ad una "shaft" (albero motore) funzionante (ovvero
                 che gira).
             </p>
+            <!------- SHAFT ------->
             <h2 class="titolo">LE SHAFT</h2>
             <p class="testointro">
                 Le "shaft" (o alberi motore) sono il principale metodo di
@@ -142,6 +144,11 @@
                 <br />
                 Servono a collegare i macchinari che consumano SU a dei
                 generatori di SU, ma non sono l'unico.
+                <br />
+                <br />
+                Le shaft sono l'unico blocco della mod dove ci si può piazzare
+                un nastro trapostatore.
+                <br />
                 <br />
                 Ecco come è fatta una shaft:
             </p>
@@ -159,8 +166,204 @@
                     alt="ricetta shaft"
                     class="speed_stress_shaft"
                     style="border: #7695f0 3px solid; border-radius: 20px; margin-left: 3%;"
+                    id="shaftrecipe"
                 />
             </div>
+            <!------- GENERATORI ENERGIA CINETICA ------->
+            <h2 class="titolo">I VARI METODI PER GENERARE ENERGIA CINETICA</h2>
+            <p class="testointro">
+                Per generare energia cinetica ci sono 4 metodi:
+            </p>
+            <ol>
+                <li class="testointro">Motore a vapore;</li>
+                <li class="testointro">Multino a vento;</li>
+                <li class="testointro">Ruote d'acqua;</li>
+                <li class="testointro">Manovella;</li>
+            </ol>
+            <p class="testointro">
+                Ognuno di essi ha i suoi pro e contro, analizziamoli insieme:
+            </p>
+            <!------- MOTORI A VAPORE ------->
+            <h2 class="titolo">MOTORE A VAPORE</h2>
+            <p class="testointro">
+                I motori a vapori sono la fonte di energia cinetica più potente
+                della mod.
+            </p>
+            <p class="testointro">
+                Infatti un motore a vapore di livello massimo può raggiungere i
+                294.912 SU.
+                <br />
+                Sì, ho detto livelli, la potenza dei motori a vapore (o anche
+                boiler) è misurata in livelli (oltre che in SU), come si può
+                intuire più è alto il livello più SU e RPM produce.
+            </p>
+            <p class="testointro">
+                Ecco un esempio di boiler al livello massimo:
+            </p>
+            <img
+                src="./Immagini/Boiler lvl 18.png"
+                alt="Motore a vapore livello 18"
+                id="boiler18"
+            />
+            <p class="testointro">
+                A primo impatto può sembrare confusionario, ma in realtà è molto
+                semplice da capire.
+            </p>
+            <p class="testointro">
+                Dividiamolo in sezioni così è più facile sia da capire che da
+                spiegare:
+            </p>
+            <ol>
+                <li class="testointro">Output SU e RPM;</li>
+                <li class="testointro">Boiler con blaze burners;</li>
+                <li class="testointro">Input acqua;</li>
+            </ol>
+            <!-- SEZIONE 1 -->
+            <h2 class="titolo">1) Output SU e RPM</h2>
+            <img
+                src="./Immagini/Sezione 1) output.png"
+                alt="Sezione 1 output"
+                id="sezione1img"
+            />
+            <p class="testointro sezione1testo">
+                Questa sezione è quella che si collegherà al sistema e sarà
+                quella che gli darà la potenza (SU) e, in certi casi, la
+                velocità (RPM).
+            </p>
+            <p class="testointro sezione1testo">
+                Ci sono vari blocchi e ognuno ha la sua funzionalità:
+            </p>
+            <ul>
+                <li class="testointro sezione1testo listasezione1">
+                    18 motori a vapore;
+                </li>
+                <li class="testointro sezione1testo listasezione1">
+                    18 <a href="#shaft">shaft</a>;
+                </li>
+                <li class="testointro sezione1testo listasezione1">
+                    9 trasmissioni a catena rivestite;
+                </li>
+                <li class="testointro sezione1testo listasezione1">
+                    1 trasmissione orizzontale (gearbox);
+                </li>
+                <li class="testointro sezione1testo listasezione1">
+                    1 <a href="#stress-speed">tachimetro</a>;
+                </li>
+                <li class="testointro sezione1testo listasezione1">
+                    1 <a href="#stress-speed">stressometro</a>;
+                </li>
+            </ul>
+            <h2 class="titolo sezione1testo">MOTORE A VAPORE</h2>
+            <p class="testointro sezione1testo">
+                I motori a vapore sono quelli che producono gli SU, hanno
+                bisogno di essere connessi ad un <a href="#">boiler</a> e ,per
+                trasmettere la forza cinetica che generano, ad una shaft.
+            </p>
+            <p class="testointro sezione1testo">
+                Per un boiler di livello 18 (il livello massimo) ci servono per
+                generare tutta l'energia cinetica potenziale minimo 18 motori a
+                vapore, se se ne mettono più di 18 il numero di SU di ogni
+                motore sarà:
+                <br />
+                294,912 SU (il massimo che un boiler di livello 18 può generare)
+                diviso i numeri di motori a vapore.
+            </p>
+            <p class="testointro" style="margin-top: 2%;">
+                Ecco come è fatto un motore a vapore con accanto la sua recipe:
+            </p>
+            <img
+                src="./Immagini/motore a vapore.webp"
+                alt="motore a vapore"
+                style="margin-left: 2%;"
+                id="steamengine"
+            />
+            <img
+                src="./Immagini/steam engine recipe.png"
+                alt="motore a vapore recipe"
+                id="steamrecipe"
+            />
+            <p class="testointro">
+                Ogni motore a vapore in un boiler è indipendente dagli altri,
+                come potete vedere dall'immagine del boiler al livello 18, ho
+                messo un motore sul retro per dare potenza alle pompe che
+                mandano l'acqua al boiler, infatti i motori si possono mettere
+                ovunque voi vogliate intorno al boiler.
+            </p>
+            <p class="testointro">
+                Ogni singolo motore genera tra le 2.048 SU e le 16.384 e può
+                girare ad un minimo di 16 RPM fino ad un massimo di 64.
+            </p>
+            <h2 class="titolo">LE SHAFT</h2>
+            <p class="testointro">
+                Le shaft servono, come abbiamo detto prima, a trasferire, in
+                questo caso, l'energia cinetica prodotta dai motori a vapore
+                alle trasmissioni a catena rivestite.
+            </p>
+            <h2 class="titolo">TRASMISSIONI A CATENA RIVESTITE</h2>
+            <p class="testointro">
+                Le trasmissioni a catena rivestite sono delle shaft, ma che
+                possono trasferire l'energia cinetica sia orizzontalmente che
+                verticalmente.
+                <br />
+                <br />
+                Ecco come sono fatte con accanto la loro recipe:
+            </p>
+            <img
+                src="./Immagini/Encased_Chain_Drive.webp"
+                alt="trasmissione a catena rivestita"
+                id="encasedchaindrive"
+            />
+            <img
+                src="./Immagini/encased chain drive recipe.png"
+                alt="trasmissione a catena rivestita recipe"
+                id="encasedchaindriverecipe"
+            />
+            <p class="testointro">
+                Non vengono craftate solo con le iron nuggets, ma anche con le
+                zinc nuggets, questo fa sì che sia più semplice craftarle,
+                perché se non si ha un materiale si ha l'altro.
+            </p>
+            <h2 class="titolo">TRASMISSIONE ORIZZONTALE/VERTICALE (GEARBOX)</h2>
+            <p class="testointro">
+                I gearbox servono a distribuire la forza cinetica inserita in un
+                lato ad altri 3, ma nel senso di rotazione opposto a quello
+                inserito, in base al tipo (orizzontale o verticale) distribuisce
+                la rotazione, in questo caso la distribuisce orizzontalmente.
+                <br />
+                <br />
+                Si piò connettere ad una shaft e non consumerà nessun SU e le
+                altre uscite saranno con gli stessi RPM.
+                <br />
+                <br />
+                Ecco come è fatto e la sua recipe:
+            </p>
+            <img
+                src="./Immagini/Horizontal gearbox.webp"
+                alt="gearbox orizzontale"
+                id="horizontalgearbox"
+            />
+            <img
+                src="./Immagini/horizontal gearbox recipe.png"
+                alt="gearbox orizzontale recipe"
+                id="horizontalgearboxrecipe"
+            />
+            <p class="testointro">
+                Per craftare quello verticale basta che si inserisce nella
+                griglia di crafting il gearbox orizzontale e si otterrà così il
+                gearbox verticale.
+            </p>
+            <h2 class="titolo">TACHIMETRO/STRESSOMETRO</h2>
+            <p class="testointro">
+                Di entrambi ne abbiamo già parlato, ma nei capitoli successivi
+                ci sarà una guida più dettagliata su come funzionano.
+                <br />
+                <br />
+                Il tachimetro mostrerà che il sistema girerà a 64 RPM;
+                <br />
+                <br />
+                Mentre lo stressometro mostrerà che il sistema produce 294.912
+                SU;
+            </p>
         </div>
         <!------------------------------------------------ FOOTER ------------------------------------------------>
         <footer>
