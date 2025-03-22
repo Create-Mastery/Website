@@ -16,13 +16,16 @@
             crossorigin="anonymous"
         ></script>
         <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJ3BJZTRLQ"></script>
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-RJ3BJZTRLQ"
+        ></script>
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-RJ3BJZTRLQ');
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-RJ3BJZTRLQ');
         </script>
     </head>
     <body>
@@ -257,8 +260,9 @@
             <h2 class="titolo sezione1testo">MOTORE A VAPORE</h2>
             <p class="testointro sezione1testo">
                 I motori a vapore sono quelli che producono gli SU, hanno
-                bisogno di essere connessi ad un <a href="#">boiler</a> e ,per
-                trasmettere la forza cinetica che generano, ad una shaft.
+                bisogno di essere connessi ad un
+                <a href="#boilerht">boiler</a> e ,per trasmettere la forza
+                cinetica che generano, ad una shaft.
             </p>
             <p class="testointro sezione1testo">
                 Per un boiler di livello 18 (il livello massimo) ci servono per
@@ -365,6 +369,249 @@
                 Mentre lo stressometro mostrerà che il sistema produce 279.390
                 SU, non mostra 294.912 SU perché c'è il motore sul retro che ne
                 prende una parte dell'energia che il boiler può generare;
+            </p>
+            <!-- SEZIONE 2 -->
+            <h2 class="titolo">2) BOILER CON BLAZE BURNERS</h2>
+            <img
+                src="./Immagini/Sezione 2) boiler.png"
+                alt="sezione 2 boiler"
+                id="sezione2img"
+            />
+            <p class="testointro sezione2testo">
+                Questa sezione è dove si trova il vero il proprio boiler, ovvero
+                dove viene inserita l'acqua e con l'aiuto dei blaze burners (ma
+                anche di altre fonti di calore) viene prodotto il vapore che poi
+                viene usato ai motori.
+                <br />
+                <br />
+                È formato da 2 blocchi:
+            </p>
+            <ul>
+                <li
+                    class="testointro sezione2testo listasezione2"
+                    id="boilerht"
+                >
+                    72 serbatoi di rame;
+                </li>
+                <li class="testointro sezione2testo listasezione2">
+                    9 blaze burners;
+                </li>
+            </ul>
+            <h2 class="titolo sezione2testo">SERBATOI DI RAME</h2>
+            <p class="testointro sezione2testo">
+                Questi sono, come dice il nome, i serbatoi dove va collegato
+                l'output e l'input.
+                <br />
+                Quindi si può definire il "cuore" del boiler infatti è qui dove
+                l'acqua si trasforma in vapore che poi viene usato dai motori a
+                vapore.
+                <br />
+                <br />
+                Ecco come è fatto e la sua recipe:
+            </p>
+            <img
+                src="./Immagini/Fluid_Tank.webp"
+                alt="serbatoio di rame"
+                id="fluidtank"
+            />
+            <img
+                src="./Immagini/fluid tank recipe.png"
+                alt="serbatoio di rame recipe"
+                id="fluidtankrecipe"
+            />
+            <br />
+            <br />
+            <p class="testointro">
+                Un boiler è formato da minimo 4 serbatoi, un massimo non c'è
+                però è inutile andare oltre i 72 (3x3x8), perché non da nessun
+                beneficio aggiungerne altri, quindi per risparmiare materiali 72
+                è il massimo consigliato.
+                <br />
+                <br />
+                Quando ci si piazza un motore a vapore sopra l'aspetto cambia
+                aggiungendo un "display" che mostra il livello del boiler.
+                <br />
+                <br />
+                Non vengono usati solo nei motori a vapore, ma anche per
+                immagazzinare l'acqua (che dal nome è abbastanza ovvio) e se
+                viene "collegato" ad un lettore di dati (display link) si può
+                visualizzare il contenuto.
+                <br />
+                <br />
+                Un singolo serbatoio può contenere massimo 8 buckets (8.000 mB),
+                si possono collegare con altri serbatoi per formare delle torri
+                alte massimo 32 blocchi, ma la base varia in base alla quantità
+                di serbatoi piazzati, così si ha la capacità di immagazzinare un
+                massimo di 2.304 buckets di qualsiasi fluido.
+                <br />
+                L'area minima della base è di 1 blocco fino ad un massimo di un
+                3x3.
+                <br />
+                <br />
+                Ecco i vari livelli di calore con i rispettivi blocchi:
+            </p>
+            <ul>
+                <li class="testointro">
+                    Passivo (0 livelli di calore):
+                    <ul>
+                        <li class="testointro">Fuoco;</li>
+                        <li class="testointro">Campfire;</li>
+                        <li class="testointro">Lava;</li>
+                        <li class="testointro">Blocco di magma;</li>
+                        <li class="testointro">
+                            Blaze burner vuoto, ma accesso con il flint e steel;
+                        </li>
+                        <li class="testointro">Blaze burner spento;</li>
+                    </ul>
+                </li>
+                <br />
+                <li class="testointro">
+                    Attivo (1 livello di calore per blaze burner):
+                    <ul>
+                        <li class="testointro">Blaze burner acceso;</li>
+                    </ul>
+                </li>
+                <br />
+                <li class="testointro">
+                    Overclockato (2 livelli di calore per blaze burner):
+                    <ul>
+                        <li class="testointro">Superheated blaze burner;</li>
+                    </ul>
+                </li>
+            </ul>
+            <h2 class="titolo">BLAZE BURNERS</h2>
+            <p class="testointro">
+                I blaze burners sono 1 delle fonti di calore dei boiler e anche
+                la più potente, al pari del boiler heater dell'ADD-ON new age.
+                <br />
+                <br />
+                Per funzionare ha bisogno di materiali infiammabili.
+                <br />
+                <br />
+                Ecco come è fatto con e senza blaze e la sua recipe:
+            </p>
+            <img
+                src="./Immagini/Empty_Blaze_Burner.webp"
+                alt="blaze burner vuoto"
+                id="emptyblazeburner"
+            />
+            <img
+                src="./Immagini/Blaze_Burner.webp"
+                alt="blaze burner pieno"
+                id="blazeburner"
+            />
+            <img
+                src="./Immagini/blaze burner recipe.png"
+                alt="blaze burner recipe"
+                id="blazeburnerrecipe"
+            />
+            <p class="testointro">
+                Per inserire il blaze dentro la "gabbia" vuota bisogna fare
+                tasto destro o su un blaze o su uno spawner di blaze, quindi di
+                può fare anche in pacifica.
+            </p>
+            <p class="testointro">I blaze burners hanno 3 stadi:</p>
+            <ol>
+                <li class="testointro">
+                    Spento;
+                    <div class="blazeburnercontainer">
+                        <img
+                            src="./Immagini/Blaze_Burner_smouldering.webp"
+                            alt="blaze burner spento"
+                            class="blazeburnerstate"
+                        />
+                    </div>
+                </li>
+                <li class="testointro">
+                    Acceso;
+                    <div class="blazeburnercontainer">
+                        <img
+                            src="./Immagini/Blaze_Burner_heated.webp"
+                            alt="blaze burner acceso"
+                            class="blazeburnerstate"
+                        />
+                    </div>
+                </li>
+                <li class="testointro">
+                    Superheated;
+                    <div class="blazeburnercontainer">
+                        <img
+                            src="./Immagini/Blaze_Burner_super-heated.webp"
+                            alt="superheated blaze burner"
+                            class="blazeburnerstate"
+                        />
+                    </div>
+                </li>
+            </ol>
+            <h2 class="titolo">SPENTO:</h2>
+            <p class="testointro">
+                Per spento si intende quando il blaze burner sta nella modalità
+                "idle" (è passivo), quindi quando non gli viene dato nessun
+                materiale con cui alimentarsi.
+                <br />
+                Può comunque, anche se poco, dare calore ai boiler.
+                <br />
+                <br />
+                Questo stadio fornisce un livello di calore passivo (come ad
+                esempio il campfire).
+            </p>
+            <h2 class="titolo">ACCESO:</h2>
+            <p class="testointro">
+                Invice si dice acceso quando è stato alimentato da un materiale
+                infiammabile (es. carbone, legno e lava ecc). Per questo stadio
+                il materiale migliore da usare è la lava perché dura molto tempo
+                ed è molto semplice da automatizzare con la create.
+                <br />
+                <br />
+                Questo stadio fornisce un livello di dalore per blaze burner.
+            </p>
+            <h2 class="titolo">SUPERHEATED:</h2>
+            <p class="testointro">
+                Questo è lo stadio più potente di tutti.
+                <br />
+                Per portatlo a questo livello c'è bisogno di un item speciale,
+                la blaze cake:
+            </p>
+            <img
+                src="./Immagini/Blaze_Cake_Base.webp"
+                alt="blaze cake vuota"
+                id="blazecakebase"
+            />
+            <img
+                src="./Immagini/Blaze_Cake.webp"
+                alt="blaze cake"
+                id="blazecake"
+            />
+            <div class="blazecakerecipecontainer">
+                <img
+                    src="./Immagini/blaze cake base recipe.png"
+                    alt="blaze cake vuota recipe"
+                    id="blazecakebaserecipe"
+                />
+                <img
+                    src="./Immagini/blaze cake recipe.png"
+                    alt="blaze cake recipe"
+                    id="blazecakerecipe"
+                />
+            </div>
+            <p class="testointro">
+                Con questo stadio si sbloccano tutte le recipe del mixer, in
+                particolare sblocca la possibilità di craftare l'ottone (brass).
+                <br />
+                <br />
+                Questo stadio da 2 livelli di calore per blaze burner.
+            </p>
+            <h2 class="titolo">ALTRI UTILIZZI</h2>
+            <p class="testointro">
+                I blaze burners non vengono usati solo come fonte di calore per
+                i boiler, ma vengono anche usate per l'affumicazione di massa
+                (bulk smoking) e l'infestazione di massa (bulk haunting).
+                <br />
+                Per poterli utilizzare in questi casi bisogna accendere con un
+                flint and steel la gabbia vuota così si formerà la fiamma del
+                campfire, mentre per l'infestazione di massa bisogna dargli o la
+                soul sand o la soul soil così si formerà sempre la fiamma del
+                campfire dentro la gabbia, ma blu.
             </p>
         </div>
         <!------------------------------------------------ FOOTER ------------------------------------------------>
