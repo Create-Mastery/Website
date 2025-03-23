@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Guida: le basi</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="keywords"
+            content="Create, Tutorial, Create Guida, Create Mod, Mod Minecraft"
+        />
+        <meta name="description" content="Create Guida" />
+        <meta name="google-adsense-account" content="ca-pub-5059681625355424" />
+        <link rel="stylesheet" href="CSS/styles-guida.css" />
+        <link rel="icon" href="./Immagini/637588742363737916 (1).png" />
+        <script
+            src="https://kit.fontawesome.com/2b1e118d7e.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-RJ3BJZTRLQ"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-RJ3BJZTRLQ');
+        </script>
+    </head>
+    <body>
+        <!------------------------------------------------ HEADER ------------------------------------------------>
+        <header>
+            <div id="HeaderLogo">
+                <div id="Logo-Titolo">
+                    <a
+                        href="https://www.curseforge.com/minecraft/mc-mods/create"
+                        target="_blank"
+                        class="LogoCreate"
+                    >
+                        <img
+                            class="LogoCreate"
+                            src="./Immagini/637588742363737916 (1).png"
+                            alt="Logo Create"
+                            height="150px"
+                            title="Logo Create"
+                    /></a>
+                    <h1 id="NomeCreate">
+                        <b>CREATE</b>
+                    </h1>
+                </div>
+            </div>
+            <!-- NAVBAR -->
+            <nav id="navbar">
+                <div id="menu-toggle">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </div>
+                <!-- Menu hamburger -->
+                <ul id="nav-list">
+                    <li><a href="index.html" target="_blank">HOME</a></li>
+                    <li>
+                        <a href="chi_siamo.html" target="_blank">CHI SIAMO</a>
+                    </li>
+                    <li>
+                        <a href="create_mastery.html" target="_blank"
+                            >CREATE MASTERY</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.curseforge.com/minecraft/mc-mods/create"
+                            target="_blank"
+                            style="word-wrap: break-word;"
+                            >DOWNLOAD</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!----------------------------------------------- GUIDA ----------------------------------------------->
+        <div id="intro">
+            <div id="introtitolosfondo">
+                <h1 id="titolointro">GUIDA: LE BASI | PT.1</h1>
+                <img
+                    src="./Immagini/Site-logo.webp"
+                    alt="Logo Create 2"
+                    id="immaginedestra"
+                />
+            </div>
+            <p class="testointro">
+                Questa pagina è la vera e propria guida che ti aiuterà a
+                compredere la Create e i suoi funzionamenti.
+                <br />
+                Nei capitoli sottostanti ci saranno le basi della Create.
+            </p>
+            <p class="testointro" id="stress-speed">
+                In questa pagina spiegheremo i vari metodi per produrre energia
+                cinetica ed alcuni metodi basici di transporto di quest'ultima.
+            </p>
+            <p class="testointro">
+                <span style="color: red; font-weight: bold;">DISCLAIMER:</span>
+                prima di continuare consigliamo di leggere prima
+                <a href="index.html" target="_blank">l'introduzione</a>.
+            </p>
+            <!----------- INDICE ----------->
+            <table>
+                <tr>
+                    <th><h1>INDICE</h1></th>
+                </tr>
+                <tr>
+                    <td>
+                        1) <a href="#kinetics">Forza cintetica</a>
+                        <br />
+                        <br />
+                        1.1) <a href="#shaft">Shaft</a>
+                        <br />
+                        <br />
+                        2)
+                        <a href="#SUgenerators"
+                            >Generatori di energia cinetica</a
+                        >
+                        <br />
+                        <br />
+                        2.1)
+                        <a href="#steamengineind">Motori a vapore</a>
+                        <br />
+                        <br />
+                        2.2) (1) <a href="#section1ind">Output SU e RPM</a>
+                        <br />
+                        <br />
+                        2.3)
+                        <a href="#steamengineind2">Motori a vapore (blocco)</a>
+                        <br />
+                        <br />
+                        2.4)
+                        <a href="#encasedchaindriveind"
+                            >Trasmissioni a catena rivestite</a
+                        >
+                        <br />
+                        <br />
+                        2.5)
+                        <a href="#gearboxind">Trasmissione orizzontale</a>
+                        <br />
+                        <br />
+                        2.6)
+                        <a href="#stressometer/speedometerind"
+                            >Tachimetro/stressometro</a
+                        >
+                        <br />
+                        <br />
+                        2.7) (2)
+                        <a href="#section2ind">Boiler con blazeburners</a>
+                        <br />
+                        <br />
+                        2.8)
+                        <a href="#fluidtankind">Serbatoi di rame</a>
+                        <br />
+                        <br />
+                        2.9)
+                        <a href="#blazeburnerind">Blaze burners</a>
+                        <br />
+                        <br />
+                        2.10) (3) <a href="#section3ind">Input acqua</a>
+                        <br />
+                        <br />
+                        2.11)
+                        <a href="#RPMcontrollerind">Regolatori degli RPM</a>
+                        <br />
+                        <br />
+                        2.12)
+                        <a href="#bigcogwheelind">Ingranaggi grandi</a>
+                        <br />
+                        <br />
+                        2.13)
+                        <a href="#cogwheelind">Ingranaggi</a>
+                        <br />
+                        <br />
+                        2.13)
+                        <a href="#mechanicalpumpind">Pompe meccaniche</a>
+                        <br />
+                        <br />
+                        2.14)
+                        <a href="#fluidpipeind">Tubi di rame</a>
+                    </td>
+                </tr>
+            </table>
+            <br id="kinetics" />
+            <!------- FORZA CINETICA ------->
+            <h1 class="titolo">FORZA ROTAZIONALE/CINETICA</h1>
+            <p class="testointro">
+                La Create è basata sulla forza rotazionale (o anche cinetica).
+                <br />
+                Quest'ultima viene misurata in SU (stress unit) e la velocità di
+                rotazione in RPM (rotations per minute). I valori di entrambi
+                non si possono vedere senza appositi blocchi:
+            </p>
+            <ul style="list-style-type: none;">
+                <li class="testointro">
+                    Uno stressometro:
+                    <div class="stress_speed_shaft_containers">
+                        <img
+                            src="./Immagini/Stressometer.webp"
+                            alt="Immagine stressometro"
+                            class="speed_stress_shaft"
+                        />
+                    </div>
+                </li>
+                <li class="testointro">
+                    Un tachimetro:
+                    <div class="stress_speed_shaft_containers">
+                        <img
+                            src="./Immagini/Speedometer.webp"
+                            alt="Immagine tachimetro"
+                            class="speed_stress_shaft"
+                        />
+                    </div>
+                </li>
+            </ul>
+            <p class="testointro">
+                Per funzionare questi due blocchi hanno bisogno di una
+                connessione ad una "shaft" (albero motore) funzionante (ovvero
+                che gira).
+            </p>
+            <br id="shaft" />
+            <!------- SHAFT ------->
+            <h2 class="titolo">LE SHAFT</h2>
+            <p class="testointro">
+                Le "shaft" (o alberi motore) sono il principale metodo di
+                transporto orizzontale dell'energia cinetica.
+                <br />
+                Servono a collegare i macchinari che consumano SU a dei
+                generatori di SU, ma non sono l'unico.
+                <br />
+                <br />
+                Le shaft sono l'unico blocco della mod dove ci si può piazzare
+                sopra i nastri traspostatori.
+                <br />
+                <br />
+                Ecco come è fatta una shaft:
+            </p>
+            <div class="stress_speed_shaft_containers">
+                <img
+                    src="./Immagini/Shaft.webp"
+                    alt="Immagine shaft"
+                    class="speed_stress_shaft"
+                />
+            </div>
+            <p class="testointro">Sono craftate usando 2 andesite alloy:</p>
+            <div class="stress_speed_shaft_containers">
+                <img
+                    src="./Immagini/Shaft recipe.png"
+                    alt="ricetta shaft"
+                    class="speed_stress_shaft"
+                    style="border: #7695f0 3px solid; border-radius: 20px; margin-left: 3%;"
+                    id="shaftrecipe"
+                />
+            </div>
+            <br id="SUgenerators" />
+            <!------- GENERATORI ENERGIA CINETICA ------->
+            <h1 class="titolo">I VARI METODI PER GENERARE ENERGIA CINETICA</h1>
+            <p class="testointro">
+                Per generare energia cinetica ci sono 4 metodi:
+            </p>
+            <ol>
+                <li class="testointro">Motore a vapore;</li>
+                <li class="testointro">Mulino a vento;</li>
+                <li class="testointro">Ruote d'acqua;</li>
+                <li class="testointro">Manovella;</li>
+            </ol>
+            <p class="testointro" id="steamengineind">
+                Ognuno di essi ha i suoi pro e contro, analizziamoli insieme:
+            </p>
+            <!------- MOTORI A VAPORE ------->
+            <h2 class="titolo">MOTORE A VAPORE</h2>
+            <p class="testointro">
+                I motori a vapore sono la fonte di energia cinetica più potente
+                della mod.
+                <br />
+                <br />
+                Infatti un motore a vapore di livello massimo può raggiungere i
+                294.912 SU.
+                <br />
+                Sì, ho detto livelli, la potenza dei motori a vapore (o anche
+                boiler) è misurata in livelli (oltre che in SU), come si può
+                intuire più è alto il livello più SU e RPM produce.
+                <br />
+                <br />
+                Ecco un esempio di boiler al livello massimo:
+            </p>
+            <img
+                src="./Immagini/Boiler lvl 18.png"
+                alt="Motore a vapore livello 18"
+                id="boiler18"
+            />
+            <p class="testointro">
+                A primo impatto può sembrare confusionario, ma in realtà è molto
+                semplice da capire.
+                <br />
+                <br />
+                Dividiamolo in sezioni così è più facile sia da capire che da
+                spiegare:
+            </p>
+            <ol>
+                <li class="testointro">Output SU e RPM;</li>
+                <li class="testointro">Boiler con blaze burners;</li>
+                <li class="testointro" id="section1ind">Input acqua;</li>
+            </ol>
+            <!-- SEZIONE 1 -->
+            <h2 class="titolo">1) Output SU e RPM</h2>
+            <img
+                src="./Immagini/Sezione 1) output.png"
+                alt="Sezione 1 output"
+                id="sezione1img"
+            />
+            <p class="testointro sezione1testo">
+                Questa sezione è quella che si collegherà al sistema e sarà
+                quella che gli darà la potenza (SU) e, in certi casi, anche la
+                velocità (RPM).
+                <br />
+                <br />
+                Ci sono vari blocchi e ognuno ha la sua funzionalità:
+            </p>
+            <ul>
+                <li class="testointro sezione1testo listasezione1">
+                    18 motori a vapore;
+                </li>
+                <li class="testointro sezione1testo listasezione1">
+                    18 <a href="#shaft">shaft</a>;
+                </li>
+                <li class="testointro sezione1testo listasezione1">
+                    9 trasmissioni a catena rivestite;
+                </li>
+                <li class="testointro sezione1testo listasezione1">
+                    1 trasmissione orizzontale (gearbox);
+                </li>
+                <li class="testointro sezione1testo listasezione1">
+                    1 <a href="#stress-speed">tachimetro</a>;
+                </li>
+                <li
+                    class="testointro sezione1testo listasezione1"
+                    id="steamengineind2"
+                >
+                    1 <a href="#stress-speed">stressometro</a>;
+                </li>
+            </ul>
+            <h2 class="titolo sezione1testo">MOTORE A VAPORE</h2>
+            <p class="testointro sezione1testo">
+                I motori a vapore sono quelli che producono gli SU, hanno
+                bisogno di essere connessi ad un
+                <a href="#boilerht">boiler</a> e ,per trasmettere la forza
+                cinetica che generano, ad una shaft.
+                <br />
+                <br />
+                Per un boiler di livello 18 (il livello massimo) ci servono per
+                generare tutta l'energia cinetica potenziale minimo 18 motori a
+                vapore, se se ne mettono più di 18 il numero di SU di ogni
+                motore sarà:
+                <br />
+                294,912 SU (il massimo che un boiler di livello 18 può generare)
+                diviso i numeri di motori a vapore.
+            </p>
+            <p class="testointro" style="margin-top: 2%;">
+                Ecco come è fatto un motore a vapore con accanto la sua recipe:
+            </p>
+            <img
+                src="./Immagini/motore a vapore.webp"
+                alt="motore a vapore"
+                style="margin-left: 2%;"
+                id="steamengine"
+            />
+            <img
+                src="./Immagini/steam engine recipe.png"
+                alt="motore a vapore recipe"
+                id="steamrecipe"
+            />
+            <p class="testointro">
+                Ogni motore a vapore in un boiler è indipendente dagli altri,
+                come potete vedere dall'immagine del boiler al livello 18, ho
+                messo un motore sul retro per dare potenza alle pompe che
+                mandano l'acqua al boiler, infatti i motori si possono mettere
+                ovunque voi vogliate intorno al boiler.
+                <br />
+                <br />
+                Ogni singolo motore genera tra le 2.048 SU e le 16.384 e può
+                girare ad un minimo di 16 RPM fino ad un massimo di 64.
+            </p>
+            <h2 class="titolo">LE SHAFT</h2>
+            <p class="testointro" id="encasedchaindriveind">
+                Le shaft servono, come abbiamo già detto prima, a trasferire, in
+                questo caso, l'energia cinetica prodotta dai motori a vapore
+                alle trasmissioni a catena rivestite.
+            </p>
+            <h2 class="titolo">TRASMISSIONI A CATENA RIVESTITE</h2>
+            <p class="testointro">
+                Le trasmissioni a catena rivestite sono delle shaft, ma che
+                possono trasferire l'energia cinetica sia orizzontalmente che
+                verticalmente.
+                <br />
+                <br />
+                Ecco come sono fatte con accanto la loro recipe:
+            </p>
+            <img
+                src="./Immagini/Encased_Chain_Drive.webp"
+                alt="trasmissione a catena rivestita"
+                id="encasedchaindrive"
+            />
+            <img
+                src="./Immagini/encased chain drive recipe.png"
+                alt="trasmissione a catena rivestita recipe"
+                id="encasedchaindriverecipe"
+            />
+            <p class="testointro" id="gearboxind">
+                Non vengono craftate solo con le iron nuggets, ma anche con le
+                zinc nuggets, questo fa sì che sia più semplice craftarle,
+                perché se non si ha un materiale si ha l'altro.
+            </p>
+            <h2 class="titolo">TRASMISSIONE ORIZZONTALE/VERTICALE (GEARBOX)</h2>
+            <p class="testointro">
+                I gearbox servono a distribuire la forza cinetica inserita in un
+                lato ad altri 3, ma nel senso di rotazione opposto a quello
+                inserito, in base al tipo (orizzontale o verticale) distribuisce
+                la rotazione, in questo caso la distribuisce orizzontalmente.
+                <br />
+                <br />
+                Si piò connettere ad una shaft e non consumerà nessun SU e le
+                altre uscite gireranno con la stessa velocità.
+                <br />
+                <br />
+                Ecco come è fatto e la sua recipe:
+            </p>
+            <img
+                src="./Immagini/Horizontal gearbox.webp"
+                alt="gearbox orizzontale"
+                id="horizontalgearbox"
+            />
+            <img
+                src="./Immagini/horizontal gearbox recipe.png"
+                alt="gearbox orizzontale recipe"
+                id="horizontalgearboxrecipe"
+            />
+            <p class="testointro" id="stressometer/speedometerind">
+                Per craftare le versione verticale basta che si inserisce nella
+                griglia di crafting il gearbox orizzontale e si otterrà così il
+                gearbox verticale.
+            </p>
+            <h2 class="titolo">TACHIMETRO/STRESSOMETRO</h2>
+            <p class="testointro">
+                Di entrambi ne abbiamo già parlato, ma nei capitoli successivi
+                ci sarà una guida più dettagliata su come funzionano.
+                <br />
+                <br />
+                Il tachimetro mostrerà che il sistema girerà a 48 RPM;
+                <br />
+                <br id="section2ind" />
+                Mentre lo stressometro mostrerà che il sistema produce 279.390
+                SU, non mostra 294.912 SU perché c'è il motore sul retro che ne
+                prende una parte dell'energia che il boiler può generare;
+            </p>
+            <!-- SEZIONE 2 -->
+            <h2 class="titolo">2) BOILER CON BLAZE BURNERS</h2>
+            <img
+                src="./Immagini/Sezione 2) boiler.png"
+                alt="sezione 2 boiler"
+                id="sezione2img"
+            />
+            <p class="testointro sezione2testo">
+                Questa sezione è dove si trova il vero il proprio boiler, ovvero
+                dove viene inserita l'acqua e con l'aiuto dei blaze burners (ma
+                anche di altre fonti di calore) viene prodotto il vapore che poi
+                viene usato ai motori.
+                <br />
+                <br />
+                È formato da 2 blocchi:
+            </p>
+            <ul>
+                <li
+                    class="testointro sezione2testo listasezione2"
+                    id="boilerht"
+                >
+                    72 serbatoi di rame;
+                </li>
+                <li
+                    class="testointro sezione2testo listasezione2"
+                    id="fluidtankind"
+                >
+                    9 blaze burners;
+                </li>
+            </ul>
+            <h2 class="titolo sezione2testo">SERBATOI DI RAME</h2>
+            <p class="testointro sezione2testo">
+                Questi sono, come dice il nome, i serbatoi dove va collegato
+                l'output e l'input.
+                <br />
+                Quindi si può definire il "cuore" del boiler infatti è qui dove
+                l'acqua si trasforma in vapore che poi viene usato dai motori a
+                vapore.
+                <br />
+                <br />
+                Ecco come è fatto e la sua recipe:
+            </p>
+            <img
+                src="./Immagini/Fluid_Tank.webp"
+                alt="serbatoio di rame"
+                id="fluidtank"
+            />
+            <img
+                src="./Immagini/fluid tank recipe.png"
+                alt="serbatoio di rame recipe"
+                id="fluidtankrecipe"
+            />
+            <br />
+            <br />
+            <p class="testointro">
+                Un boiler è formato da minimo 4 serbatoi, un massimo non c'è
+                però è inutile andare oltre i 72 (3x3x8), perché non da nessun
+                beneficio aggiungerne altri, quindi per risparmiare materiali 72
+                è il massimo consigliato.
+                <br />
+                <br />
+                Quando ci si piazza un motore a vapore sopra l'aspetto cambia
+                aggiungendo un "display" che mostra il livello del boiler.
+                <br />
+                <br />
+                Non vengono usati solo nei motori a vapore, ma anche per
+                immagazzinare l'acqua (che dal nome è abbastanza ovvio) e se
+                viene "collegato" ad un lettore di dati (display link) si può
+                visualizzare il contenuto.
+                <br />
+                <br />
+                Un singolo serbatoio può contenere massimo 8 buckets (8.000 mB),
+                si possono collegare con altri serbatoi per formare delle torri
+                alte massimo 32 blocchi, ma la base varia in base alla quantità
+                di serbatoi piazzati, così si ha la capacità di immagazzinare un
+                massimo di 2.304 buckets di qualsiasi fluido.
+                <br />
+                L'area minima della base è di 1 blocco fino ad un massimo di un
+                3x3.
+                <br />
+                <br />
+                Ecco i vari livelli di calore con i rispettivi blocchi:
+            </p>
+            <ul>
+                <li class="testointro">
+                    Passivo (0 livelli di calore):
+                    <ul>
+                        <li class="testointro">Fuoco;</li>
+                        <li class="testointro">Campfire;</li>
+                        <li class="testointro">Lava;</li>
+                        <li class="testointro">Blocco di magma;</li>
+                        <li class="testointro">
+                            Blaze burner vuoto, ma accesso con il flint e steel;
+                        </li>
+                        <li class="testointro">Blaze burner spento;</li>
+                    </ul>
+                </li>
+                <br />
+                <li class="testointro">
+                    Attivo (1 livello di calore per blaze burner):
+                    <ul>
+                        <li class="testointro">Blaze burner acceso;</li>
+                    </ul>
+                </li>
+                <br />
+                <li class="testointro">
+                    Overclockato (2 livelli di calore per blaze burner):
+                    <ul>
+                        <li class="testointro" id="blazeburnerind">
+                            Superheated blaze burner;
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h2 class="titolo">BLAZE BURNERS</h2>
+            <p class="testointro">
+                I blaze burners sono 1 delle fonti di calore dei boiler e anche
+                la più potente, al pari del boiler heater dell'ADD-ON new age.
+                <br />
+                <br />
+                Per funzionare ha bisogno di materiali infiammabili.
+                <br />
+                <br />
+                Ecco come è fatto con e senza blaze e la sua recipe:
+            </p>
+            <img
+                src="./Immagini/Empty_Blaze_Burner.webp"
+                alt="blaze burner vuoto"
+                id="emptyblazeburner"
+            />
+            <img
+                src="./Immagini/Blaze_Burner.webp"
+                alt="blaze burner pieno"
+                id="blazeburner"
+            />
+            <img
+                src="./Immagini/blaze burner recipe.png"
+                alt="blaze burner recipe"
+                id="blazeburnerrecipe"
+            />
+            <p class="testointro">
+                Per inserire il blaze dentro la "gabbia" vuota bisogna fare
+                tasto destro o su un blaze o su uno spawner di blaze, quindi di
+                può fare anche in pacifica.
+            </p>
+            <p class="testointro">I blaze burners hanno 3 stadi:</p>
+            <ol>
+                <li class="testointro">
+                    Spento;
+                    <div class="blazeburnercontainer">
+                        <img
+                            src="./Immagini/Blaze_Burner_smouldering.webp"
+                            alt="blaze burner spento"
+                            class="blazeburnerstate"
+                        />
+                    </div>
+                </li>
+                <li class="testointro">
+                    Acceso;
+                    <div class="blazeburnercontainer">
+                        <img
+                            src="./Immagini/Blaze_Burner_heated.webp"
+                            alt="blaze burner acceso"
+                            class="blazeburnerstate"
+                        />
+                    </div>
+                </li>
+                <li class="testointro">
+                    Superheated;
+                    <div class="blazeburnercontainer">
+                        <img
+                            src="./Immagini/Blaze_Burner_super-heated.webp"
+                            alt="superheated blaze burner"
+                            class="blazeburnerstate"
+                        />
+                    </div>
+                </li>
+            </ol>
+            <h2 class="titolo">SPENTO:</h2>
+            <p class="testointro">
+                Per spento si intende quando il blaze burner sta nella modalità
+                "idle" (è passivo), quindi quando non gli viene dato nessun
+                materiale con cui alimentarsi.
+                <br />
+                Può comunque, anche se poco, dare calore ai boiler.
+                <br />
+                <br />
+                Questo stadio fornisce un livello di calore passivo (come ad
+                esempio il campfire).
+            </p>
+            <h2 class="titolo">ACCESO:</h2>
+            <p class="testointro">
+                Invice si dice acceso quando è stato alimentato da un materiale
+                infiammabile (es. carbone, legno e lava ecc). Per questo stadio
+                il materiale migliore da usare è la lava perché dura molto tempo
+                ed è molto semplice da automatizzare con la create.
+                <br />
+                <br />
+                Questo stadio fornisce un livello di dalore per blaze burner.
+            </p>
+            <h2 class="titolo">SUPERHEATED:</h2>
+            <p class="testointro">
+                Questo è lo stadio più potente di tutti.
+                <br />
+                Per portatlo a questo livello c'è bisogno di un item speciale,
+                la blaze cake:
+            </p>
+            <img
+                src="./Immagini/Blaze_Cake_Base.webp"
+                alt="blaze cake vuota"
+                id="blazecakebase"
+            />
+            <img
+                src="./Immagini/Blaze_Cake.webp"
+                alt="blaze cake"
+                id="blazecake"
+            />
+            <div class="blazecakerecipecontainer">
+                <img
+                    src="./Immagini/blaze cake base recipe.png"
+                    alt="blaze cake vuota recipe"
+                    id="blazecakebaserecipe"
+                />
+                <img
+                    src="./Immagini/blaze cake recipe.png"
+                    alt="blaze cake recipe"
+                    id="blazecakerecipe"
+                />
+            </div>
+            <p class="testointro">
+                Con questo stadio si sbloccano tutte le recipe del mixer, in
+                particolare sblocca la possibilità di craftare l'ottone (brass).
+                <br />
+                <br />
+                Questo stadio da 2 livelli di calore per blaze burner.
+            </p>
+            <h2 class="titolo">ALTRI UTILIZZI</h2>
+            <p class="testointro">
+                I blaze burners non vengono usati solo come fonte di calore per
+                i boiler, ma vengono anche usate per l'affumicazione di massa
+                (bulk smoking) e l'infestazione di massa (bulk haunting).
+                <br id="section3ind" />
+                Per poterli utilizzare in questi casi bisogna accendere con un
+                flint and steel la gabbia vuota così si formerà la fiamma del
+                campfire, mentre per l'infestazione di massa bisogna dargli o la
+                soul sand o la soul soil così si formerà sempre la fiamma del
+                campfire dentro la gabbia, ma blu.
+            </p>
+            <!-- SEZIONE 3 -->
+            <h2 class="titolo">3) INPUT ACQUA</h2>
+            <img
+                src="./Immagini/Sezione 3) input.png"
+                alt="input acqua"
+                id="sezione3img"
+            />
+            <p class="testointro">
+                Questa parte è la parte finale, ma non per importanza, è dove
+                viene insterita l'acqua.
+                <br />
+                <br />
+                Però questo design è poco efficente e quello che dovrebbe fare
+                non lo fa tanto bene, quindi abbiamo deciso di analizzare
+                quest'altro design, più efficente e fa correttamente quello che
+                fa.
+            </p>
+            <img
+                src="./Immagini/Sezione 3) better input.png"
+                alt="input acqua migliorato"
+                id="sezione3imgbetter"
+            />
+            <p class="testointro">
+                Le differenza che c'è tra il primo e il secondo design è una, ma
+                molto importante:
+                <br />
+                il "buffer" si riempe, che sembra poco, ma in realtà è
+                utilissimo perché questo design fa la funzione che dovrebbe
+                fare, fare da backup.
+                <br />
+                <br />
+                È formato da diversi blocchi ognuno super importante:
+            </p>
+            <ul>
+                <li class="testointro">18 serbatoi d'acqua;</li>
+                <li class="testointro">1 motore a vapore;</li>
+                <li class="testointro">3 shaft;</li>
+                <li class="testointro">
+                    2 regolatori di velocità di rotazione;
+                </li>
+                <li class="testointro">2 ingranaggi grandi;</li>
+                <li class="testointro">6 ingranaggi;</li>
+                <li class="testointro">4 pompe meccaniche;</li>
+                <li class="testointro">4 tubi di rame;</li>
+            </ul>
+            <h2 class="titolo">SERBATOI D'ACQUA</h2>
+            <p class="testointro">
+                In questo caso i serbatoi hanno una funzione:
+                <br />
+                fare da buffer.
+                <br />
+                <br />
+                Questo significa che vengono usati come "backup" in caso il
+                sistema va in overstress (si consumano più SU rispetto a quelle
+                prodotte) c'è comunque l'acqua e quindi il boiler può continuare
+                a funzionare.
+                <br />
+                <br />
+                Questa parte è importantissima perché se per qualsiasi motivo le
+                fonti infinite d'acqua scompaiono c'è un po' di acqua che tiene
+                il boiler acceso per più tempo.
+            </p>
+            <h2 class="titolo">MOTORE A VAPORE</h2>
+            <p class="testointro">
+                Questo è il motore più importante che possiate mettere in un
+                boiler.
+                <br />
+                <br />
+                Perché, come accenato prima, ogni motore è individuale, quindi
+                anche se il sistema di output va in overstress il motore dietro
+                da comunque potenza alle pompe tenendo così il boiler in
+                funzione, di conseguenza evitando sprechi di materiale
+                infiammabile per i blaze burners.
+            </p>
+            <h2 class="titolo">SHAFT</h2>
+            <p class="testointro" id="RPMcontrollerind">
+                Le shaft in questo caso servono a collegare il motore a vapore
+                ai 2 regolatori di velocità di rotazione (regolatori di RPM), e
+                per collegare i 2 ingranaggi grandi agli ingranaggi.
+            </p>
+            <h2 class="titolo">REGOLATORI DEGLI RPM</h2>
+            <p class="testointro">
+                Questi blocchi servono, come suggerisce il nome, a regolare gli
+                RPM, ovvero sia a diminuirli che ad aumentarli.
+                <br />
+                <br />
+                Ecco come sono fatti e la loro recipe:
+            </p>
+            <img
+                src="./Immagini/Rotation_Speed_Controller.webp"
+                alt="regolatore di RPM"
+                id="RPMcontroller"
+            />
+            <img
+                src="./Immagini/RPM controller recipe.png"
+                alt="regolatore di RPM recipe"
+                id="RPMcontrollerrecipe"
+            />
+            <p class="testointro">È fatto con i precisione mechanism:</p>
+            <img
+                src="./Immagini/Precision_Mechanism.webp"
+                alt="precision mechanism"
+                id="precisionmechanism"
+            />
+            <img
+                src="./Immagini/precision mechanism recipe.png"
+                alt="precision mechanism recipe"
+                id="precisionmechanismrecipe"
+            />
+            <p class="testointro">
+                Questi blocchi servono a regolare non solo la velocità della
+                rotazione (1 RPM fino a 256 RPM), ma anche il verso (orario e
+                antiorario).
+                <br />
+                Però ad un costo, l'input e gli output (perché ne ha più di uno)
+                sono in blocchi diversi, infatti l'input (l'ingranaggio grande)
+                si trova nel blocco sopra.
+                <br />
+                <br />
+                Il regolatore di RPM si piazzano accanto alle shaft, e dato che
+                funzionano anche da shaft, ne può rimpiazzare una.
+                <br />
+                Come in questo caso:
+            </p>
+            <img
+                src="./Immagini/RPM controller example.png"
+                alt="esempio regolatore di RPM"
+                id="exampleRPMcontroller"
+            />
+            <p class="testointro">
+                L'utilizzo di 2 regolatori di RPM è cruciale perché permette di
+                far girare le coppie di pompe a 2 velocità diverse.
+                <br />
+                <br id="bigcogwheelind" />
+                Infatti la coppia di inupt del buffer girano a 256 RPM mentre la
+                coppia di input del boiler girano a 180 RPM (il minimo che un
+                boiler al lvl 18 richiede).
+            </p>
+            <h2 class="titolo">INGRANAGGI GRANDI</h2>
+            <p class="testointro">
+                Gli ingranaggi grandi servono per far funzionare i regolatori di
+                RPM e quindi di fornire o un input o un output.
+                <br />
+                <br />
+                Ecco come sono fatti e le loro recipe:
+            </p>
+            <img
+                src="./Immagini/Large_Cogwheel.webp"
+                alt="ingranaggio grande"
+                id="largecogwheel"
+            />
+            <div id="largecogwheelrecipecontainer">
+                <img
+                    src="./Immagini/large cogwheel recipe 1.png"
+                    alt="ingranaggio grande recipe 1"
+                    class="largecogwheelrecipe"
+                />
+                <img
+                    src="./Immagini/large cogwheel recipe 2.png"
+                    alt="ingranaggio grande recipe 2"
+                    class="largecogwheelrecipe"
+                    id="cogwheelind"
+                />
+            </div>
+            <h2 class="titolo">INGRANAGGI</h2>
+            <p class="testointro">
+                Gli ingranaggi vengono usati principalmente, come in questo
+                caso, per dare energia cinetica alle pompe.
+                <br />
+                <br />
+                Ecco come sono fatti e la loro recipe:
+            </p>
+            <img
+                src="./Immagini/Cogwheel.webp"
+                alt="ingranaggio"
+                id="cogwheel"
+            />
+            <img
+                src="./Immagini/cogwheel recipe.png"
+                alt="recipe ingranaggio"
+                id="cogwheelrecipe"
+            />
+            <p class="testointro" id="mechanicalpumpind">
+                Anche gli ingranaggi, come le trasmissioni a catena rivestite,
+                possono transportare l'energia cinetica verticalmente, ma ogni
+                volta che si piazza un nuovo ingranaggio cambia il senso di
+                rotazione.
+            </p>
+            <h2 class="titolo">POMPE MECCANICHE</h2>
+            <p class="testointro">
+                Le pompe meccaniche servono a transportare i liquidi tra i tubi
+                che poi vanno a finire in dei serbatoi.
+                <br />
+                Per funzionare, quindi prendere acqua, c'è bisogno di una fonte
+                infinita.
+                <br />
+                <br />
+                Ecco come sono fatte e la loro recipe:
+            </p>
+            <img
+                src="./Immagini/Mechanical_Pump.webp"
+                alt="pompa meccanica"
+                id="mechanicalpump"
+            />
+            <img
+                src="./Immagini/Mechanical pump recipe.png"
+                alt="recipe pompa meccanica"
+                id="mechanicalpumprecipe"
+            />
+            <p class="testointro">
+                Il senso di rotazione non influisce sulla direzione del flusso,
+                ma si può cambiare con una wrench.
+                <br />
+                Può transportare i fluidi a massimo 16 blocchi di distanza
+                (configurabile nelle impostazioni della Create).
+                <br />
+                <br />
+                Qui introduciamo una nuova feature: l'impatto sullo stress.
+                <br />
+                In pratica sarebbe quante SU consuma, l'impatto per pompa è: RPM
+                x 4.
+                <br />
+                <br />
+                Per quelle che girano a 256 RPM: 256 x 4 = 1.024 SU;
+                <br />
+                Per quelle che girano a 180 RPM: 180 x 4 = 720 SU;
+                <br />
+                <br />
+                Quindi la coppia di input del buffer ha un impatto di: 1.024 x 2
+                = 2.048 SU;
+                <br id="fluidpipeind" />
+                Mentre quello di input del boiler sarà: 720 x 2 = 1440 SU;
+            </p>
+            <h2 class="titolo">TUBI DI RAME</h2>
+            <p class="testointro">
+                Il nome è abbastanza auto esplicatorio quindi non ha bisogno di
+                introduzione.
+                <br />
+                <br />
+                Ecco come sono fatti e la loro recipe:
+            </p>
+            <img
+                src="./Immagini/Fluid_Pipe.webp"
+                alt="tubo di rame"
+                id="fluidpipe"
+            />
+            <img
+                src="./Immagini/fluid pipe recipe.png"
+                alt="recipe tubo di rame"
+                id="fluidpiperecipe"
+            />
+            <p class="testointro">
+                Possono anche essere craftati mettendo le piastre di rame in
+                verticale anziché orizzontale.
+                <br />
+                <br />
+                Il loro utilizzo in questo caso è quello di collegare le fonti
+                infinite di acqua alle pompe.
+            </p>
+            <h2 class="titolo">CONCLUSIONE</h2>
+            <p class="testointro">
+                Adesso hai capito cos'è e com'è fatto un boiler e i blocchi che
+                lo compongono, con anche alcuni dati.
+            </p>
+        </div>
+        <!------------------------------------------------ FOOTER ------------------------------------------------>
+        <footer>
+            <div id="footercontainer">
+                <div id="titolofooter">CREATE MASTERY</div>
+                <div id="footercontent">
+                    <div id="footer1">
+                        <h2 class="footertitoli">altre guide</h2>
+                        <a href="add-ons_index.html" target="_blank">ADD-ONS</a>
+                        <br />
+                        <br /><a
+                            href="le-migliori-complementari.html"
+                            target="_blank"
+                            >LE MIGLIORI COMPLEMENTARI</a
+                        >
+                    </div>
+                    <div id="footer2">
+                        <h2 id="footertitoli">contatti</h2>
+                        <address
+                            id="contatti"
+                            style="word-wrap: break-word; background-color: #7695f0; font-style: normal;"
+                        >
+                            Per info:
+                            <a href="mailto: info@createmastery.org"
+                                >info@createmastery.org</a
+                            >
+                            <br />
+                            <br />
+                            <a href="Chi siamo.html" target="_blank">
+                                Chi Siamo</a
+                            >
+                        </address>
+                    </div>
+                </div>
+                <h2 id="socialtitolo">social</h2>
+                <div id="socialcontent">
+                    <a href="https://www.youtube.com/" target="_blank"
+                        ><i class="fa-brands fa-youtube"></i>
+                        <span class="nomelink"
+                            >YouTube <span class="linea">|</span></span
+                        ></a
+                    >
+                    <a href="https://github.com/Create-Mastery" target="_blank"
+                        ><i class="fa-brands fa-github"></i>
+                        <span class="nomelink"
+                            >GitHub <span class="linea">|</span></span
+                        ></a
+                    >
+                    <a href="" target="_blank"
+                        ><i class="fa-brands fa-x-twitter"></i>
+                        <span class="nomelink" style="word-wrap: break-word;"
+                            >Twitter <span class="linea">|</span></span
+                        ></a
+                    >
+                    <a href="" target="_blank"
+                        ><i class="fa-brands fa-instagram"></i>
+                        <span class="nomelink">Instagram</span></a
+                    >
+                </div>
+                <div id="copyright">
+                    © 2025 Create Mastery. Tutti i diritti riservati.
+                </div>
+            </div>
+        </footer>
+        <script src="JS/script-guida.js"></script>
+    </body>
+</html>
