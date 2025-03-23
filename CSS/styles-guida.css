@@ -256,7 +256,8 @@ ul li {
     border-radius: 20px;
 }
 .blazeburnercontainer,
-#blazecakerecipecontainer {
+#blazecakerecipecontainer,
+#largelargecogwheelrecipecontainer {
     float: bottom;
 }
 .blazeburnerstate {
@@ -269,7 +270,16 @@ ul li {
 #horizontalgearboxrecipe,
 #blazeburnerrecipe,
 #blazecakebaserecipe,
-#blazecakerecipe {
+#blazecakerecipe,
+#sezione3img,
+#sezione3imgbetter,
+#RPMcontrollerrecipe,
+#exampleRPMcontroller,
+#precisionmechanismrecipe,
+.largecogwheelrecipe,
+#cogwheelrecipe,
+#mechanicalpumprecipe,
+#fluidpiperecipe {
     margin-left: 2%;
     border: #7695f0 3px solid;
     border-radius: 20px;
@@ -340,7 +350,22 @@ ul li {
     #blazecakebase,
     #blazecake,
     #blazecakebaserecipe,
-    #blazecakerecipe {
+    #blazecakerecipe,
+    #RPMcontroller,
+    #RPMcontrollerrecipe,
+    #exampleRPMcontroller,
+    #precisionmechanism,
+    #precisionmechanismrecipe,
+    #largecogwhell,
+    .largecogwheelrecipe,
+    #cogwheel,
+    #cogwheelrecipe,
+    #sezione3img,
+    #sezione3imgbetter,
+    #mechanicalpump,
+    #mechanicalpumprecipe,
+    #fluidpipe,
+    #fluidpiperecipe {
         width: 100%;
         height: 100%;
         display: block;
