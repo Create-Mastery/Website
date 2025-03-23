@@ -217,6 +217,31 @@ body {
 ul li {
     list-style-type: '- ';
 }
+/* INDICE */
+table {
+    user-select: none;
+}
+table:hover {
+    cursor: default;
+}
+td a {
+    text-decoration: underline solid white;
+    color: white;
+}
+table {
+    background-color: #a0bbf8;
+    border: #7695f0 3px solid;
+    border-radius: 20px;
+}
+td {
+    padding: 10px;
+    background-color: #7695f0;
+    color: white;
+    border: #7695f0 3px solid;
+    border-radius: 20px;
+    font-size: 20px;
+    font-style: none;
+}
 /* SEZIONE 1/2/3 */
 .sezione1testo,
 .sezione2testo {
@@ -314,6 +339,9 @@ ul li {
     #introtitolosfondo {
         width: 100%;
         margin-top: 0px;
+    }
+    table {
+        width: 100%;
     }
 }
 @media (max-width: 550px) {
