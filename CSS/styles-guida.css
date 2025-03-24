@@ -454,7 +454,8 @@ td {
     #sezione1img,
     #sezione2img,
     #windmillexample,
-    #verticalsails {
+    #verticalsails,
+    #superglueexample {
         width: 60%;
         float: none;
     }
