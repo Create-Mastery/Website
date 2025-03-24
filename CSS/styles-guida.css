@@ -219,6 +219,9 @@ ul li {
 }
 /* INDICE */
 table {
+    background-color: #a0bbf8;
+    border: #7695f0 3px solid;
+    border-radius: 20px;
     user-select: none;
 }
 table:hover {
@@ -227,11 +230,6 @@ table:hover {
 td a {
     text-decoration: underline solid white;
     color: white;
-}
-table {
-    background-color: #a0bbf8;
-    border: #7695f0 3px solid;
-    border-radius: 20px;
 }
 td {
     padding: 10px;
@@ -242,7 +240,7 @@ td {
     font-size: 20px;
     font-style: none;
 }
-/* SEZIONE 1/2/3 */
+/* MOTORE A VAPORE */
 .sezione1testo,
 .sezione2testo {
     margin-left: 29%;
@@ -254,6 +252,17 @@ td {
 .listasezione2 {
     margin-top: 0%;
     margin-left: 29.5%;
+}
+/* MULINO A VENTO */
+.windmilltesto {
+    margin-left: 24%;
+    margin-right: 15%;
+    margin-top: 2.2%;
+    word-wrap: break-word;
+}
+.listawindmill {
+    margin-top: 0%;
+    margin-left: 24.5%;
 }
 /*------------ IMMAGINI ------------*/
 .stress_speed_shaft_containers {
@@ -304,13 +313,42 @@ td {
 .largecogwheelrecipe,
 #cogwheelrecipe,
 #mechanicalpumprecipe,
-#fluidpiperecipe {
+#fluidpiperecipe,
+#radialchassisrecipe,
+#horizontalsails,
+#supergluerecipe,
+#windmillbearingrecipe {
     margin-left: 2%;
     border: #7695f0 3px solid;
     border-radius: 20px;
     max-width: 100%;
     height: 40%;
     width: 40%;
+}
+#windmill {
+    margin-left: 2%;
+    border: #7695f0 3px solid;
+    border-radius: 20px;
+    max-width: 100%;
+    height: 65%;
+    width: 65%;
+}
+#windmillexample {
+    float: left;
+    margin-left: 2.5%;
+    height: 20%;
+    width: 20%;
+    border: #7695f0 3px solid;
+    border-radius: 20px;
+}
+#verticalsails,
+#superglueexample {
+    float: left;
+    margin-left: 2.5%;
+    height: 15%;
+    width: 15%;
+    border: #7695f0 3px solid;
+    border-radius: 20px;
 }
 #fluidtankrecipe {
     border: #7695f0 3px solid;
@@ -342,6 +380,11 @@ td {
     }
     table {
         width: 100%;
+        max-width: 100%;
+    }
+    #sailstable tr td {
+        width: 100%;
+        font-size: 80%;
     }
 }
 @media (max-width: 550px) {
@@ -393,7 +436,15 @@ td {
     #mechanicalpump,
     #mechanicalpumprecipe,
     #fluidpipe,
-    #fluidpiperecipe {
+    #fluidpiperecipe,
+    #radialchassis,
+    #radialchassisrecipe,
+    #horizontalsails,
+    #windmill,
+    #superglue,
+    #supergluerecipe,
+    #windmillbearing,
+    #windmillbearingrecipe {
         width: 100%;
         height: 100%;
         display: block;
@@ -401,7 +452,9 @@ td {
         margin-left: auto;
     }
     #sezione1img,
-    #sezione2img {
+    #sezione2img,
+    #windmillexample,
+    #verticalsails {
         width: 60%;
         float: none;
     }
