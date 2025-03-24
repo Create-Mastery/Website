@@ -96,7 +96,7 @@
             </p>
             <p class="testointro" id="stress-speed">
                 In questa pagina spiegheremo i vari metodi per produrre energia
-                cinetica ed alcuni metodi basici di transporto di quest'ultima.
+                cinetica ed alcuni metodi basici di trasporto di quest'ultima.
             </p>
             <p class="testointro">
                 <span style="color: red; font-weight: bold;">DISCLAIMER:</span>
@@ -182,6 +182,10 @@
                         <br />
                         2.14)
                         <a href="#fluidpipeind">Tubi di rame</a>
+                        <br />
+                        <br />
+                        2.15)
+                        <a href="#windmillind">Mulino a vento</a>
                     </td>
                 </tr>
             </table>
@@ -226,14 +230,14 @@
             <h2 class="titolo">LE SHAFT</h2>
             <p class="testointro">
                 Le "shaft" (o alberi motore) sono il principale metodo di
-                transporto orizzontale dell'energia cinetica.
+                trasporto orizzontale dell'energia cinetica.
                 <br />
                 Servono a collegare i macchinari che consumano SU a dei
                 generatori di SU, ma non sono l'unico.
                 <br />
                 <br />
                 Le shaft sono l'unico blocco della mod dove ci si può piazzare
-                sopra i nastri traspostatori.
+                sopra i nastri trasportatori.
                 <br />
                 <br />
                 Ecco come è fatta una shaft:
@@ -262,8 +266,12 @@
                 Per generare energia cinetica ci sono 4 metodi:
             </p>
             <ol>
-                <li class="testointro">Motore a vapore;</li>
-                <li class="testointro">Mulino a vento;</li>
+                <li class="testointro">
+                    <a href="#steamengineind">Motore a vapore;</a>
+                </li>
+                <li class="testointro">
+                    <a href="#windmillind">Mulino a vento;</a>
+                </li>
                 <li class="testointro">Ruote d'acqua;</li>
                 <li class="testointro">Manovella;</li>
             </ol>
@@ -343,7 +351,7 @@
                     1 <a href="#stress-speed">stressometro</a>;
                 </li>
             </ul>
-            <h2 class="titolo sezione1testo">MOTORE A VAPORE</h2>
+            <h2 class="titolo sezione1testo">MOTORE A VAPORE (BLOCCO)</h2>
             <p class="testointro sezione1testo">
                 I motori a vapore sono quelli che producono gli SU, hanno
                 bisogno di essere connessi ad un
@@ -601,7 +609,7 @@
             />
             <p class="testointro">
                 Per inserire il blaze dentro la "gabbia" vuota bisogna fare
-                tasto destro o su un blaze o su uno spawner di blaze, quindi di
+                tasto destro o su un blaze o su uno spawner di blaze, quindi si
                 può fare anche in pacifica.
             </p>
             <p class="testointro">I blaze burners hanno 3 stadi:</p>
@@ -639,9 +647,8 @@
             </ol>
             <h2 class="titolo">SPENTO:</h2>
             <p class="testointro">
-                Per spento si intende quando il blaze burner sta nella modalità
-                "idle" (è passivo), quindi quando non gli viene dato nessun
-                materiale con cui alimentarsi.
+                Per spento si intende quando il blaze burner è passivo, quindi
+                quando non gli viene dato nessun materiale con cui alimentarsi.
                 <br />
                 Può comunque, anche se poco, dare calore ai boiler.
                 <br />
@@ -651,13 +658,13 @@
             </p>
             <h2 class="titolo">ACCESO:</h2>
             <p class="testointro">
-                Invice si dice acceso quando è stato alimentato da un materiale
+                Invece si dice acceso quando è stato alimentato da un materiale
                 infiammabile (es. carbone, legno e lava ecc). Per questo stadio
                 il materiale migliore da usare è la lava perché dura molto tempo
                 ed è molto semplice da automatizzare con la create.
                 <br />
                 <br />
-                Questo stadio fornisce un livello di dalore per blaze burner.
+                Questo stadio fornisce un livello di calore per blaze burner.
             </p>
             <h2 class="titolo">SUPERHEATED:</h2>
             <p class="testointro">
@@ -704,8 +711,8 @@
                 Per poterli utilizzare in questi casi bisogna accendere con un
                 flint and steel la gabbia vuota così si formerà la fiamma del
                 campfire, mentre per l'infestazione di massa bisogna dargli o la
-                soul sand o la soul soil così si formerà sempre la fiamma del
-                campfire dentro la gabbia, ma blu.
+                soul sand o la soul soil così si formerà la fiamma del campfire
+                dentro la gabbia, ma blu.
                 <span id="section3ind"></span>
             </p>
             <!-- SEZIONE 3 -->
@@ -723,7 +730,7 @@
                 Però questo design è poco efficente e quello che dovrebbe fare
                 non lo fa tanto bene, quindi abbiamo deciso di analizzare
                 quest'altro design, più efficente e fa correttamente quello che
-                fa.
+                dovrebbe fare.
             </p>
             <img
                 src="./Immagini/Sezione 3) better input.png"
@@ -760,15 +767,14 @@
                 fare da buffer.
                 <br />
                 <br />
-                Questo significa che vengono usati come "backup" in caso il
-                sistema va in overstress (si consumano più SU rispetto a quelle
-                prodotte) c'è comunque l'acqua e quindi il boiler può continuare
-                a funzionare.
-                <br />
-                <br />
                 Questa parte è importantissima perché se per qualsiasi motivo le
                 fonti infinite d'acqua scompaiono c'è un po' di acqua che tiene
                 il boiler acceso per più tempo.
+                <br />
+                E in combinazione con il motore posteriore permette al boiler di
+                non spegnersi mai, tranne quando se per qualsiasi motivo non ci
+                sono più le fonti di acqua infinite allora sarà temporaneo il
+                funzionamento.
             </p>
             <h2 class="titolo">MOTORE A VAPORE</h2>
             <p class="testointro">
@@ -786,7 +792,8 @@
             <p class="testointro">
                 Le shaft in questo caso servono a collegare il motore a vapore
                 ai 2 regolatori di velocità di rotazione (regolatori di RPM), e
-                per collegare i 2 ingranaggi grandi agli ingranaggi.
+                per collegare i 2 ingranaggi grandi agli altri ingranaggi più
+                piccoli.
                 <span id="RPMcontrollerind"></span>
             </p>
             <h2 class="titolo">REGOLATORI DEGLI RPM</h2>
@@ -820,12 +827,12 @@
             />
             <p class="testointro">
                 Questi blocchi servono a regolare non solo la velocità della
-                rotazione (1 RPM fino a 256 RPM), ma anche il verso (orario e
+                rotazione (da 1 RPM fino a 256 RPM), ma anche il verso (orario e
                 antiorario).
                 <br />
                 Però ad un costo, l'input e gli output (perché ne ha più di uno)
-                sono in blocchi diversi, infatti l'input (l'ingranaggio grande)
-                si trova nel blocco sopra.
+                sono in blocchi diversi, infatti l'output (l'ingranaggio
+                grande), in questo caso si trova nel blocco sopra.
                 <br />
                 <br />
                 Il regolatore di RPM si piazzano accanto alle shaft, e dato che
@@ -845,13 +852,15 @@
                 <br />
                 Infatti la coppia di inupt del buffer girano a 256 RPM mentre la
                 coppia di input del boiler girano a 180 RPM (il minimo che un
-                boiler al lvl 18 richiede).
+                boiler al lvl 18 richiede), così permettendo al buffers di
+                riempirsi.
                 <span id="bigcogwheelind"></span>
             </p>
             <h2 class="titolo">INGRANAGGI GRANDI</h2>
             <p class="testointro">
                 Gli ingranaggi grandi servono per far funzionare i regolatori di
-                RPM e quindi di fornire o un input o un output.
+                RPM e quindi di fornire o un input o un output, un output in
+                questo caso.
                 <br />
                 <br />
                 Ecco come sono fatti e le loro recipe:
@@ -894,14 +903,14 @@
             />
             <p class="testointro">
                 Anche gli ingranaggi, come le trasmissioni a catena rivestite,
-                possono transportare l'energia cinetica verticalmente, ma ogni
+                possono trassportare l'energia cinetica verticalmente, ma ogni
                 volta che si piazza un nuovo ingranaggio cambia il senso di
                 rotazione.
                 <span id="mechanicalpumpind"></span>
             </p>
             <h2 class="titolo">POMPE MECCANICHE</h2>
             <p class="testointro">
-                Le pompe meccaniche servono a transportare i liquidi tra i tubi
+                Le pompe meccaniche servono a trassportare i liquidi tra i tubi
                 che poi vanno a finire in dei serbatoi.
                 <br />
                 Per funzionare, quindi prendere acqua, c'è bisogno di una fonte
@@ -924,7 +933,7 @@
                 Il senso di rotazione non influisce sulla direzione del flusso,
                 ma si può cambiare con una wrench.
                 <br />
-                Può transportare i fluidi a massimo 16 blocchi di distanza
+                Può trassportare i fluidi a massimo 16 blocchi di distanza
                 (configurabile nelle impostazioni della Create).
                 <br />
                 <br />
@@ -933,6 +942,8 @@
                 In pratica sarebbe quante SU consuma, l'impatto per pompa è: RPM
                 x 4.
                 <br />
+                <br />
+                Quindi:
                 <br />
                 Per quelle che girano a 256 RPM: 256 x 4 = 1.024 SU;
                 <br />
@@ -975,7 +986,9 @@
             <p class="testointro">
                 Adesso hai capito cos'è e com'è fatto un boiler e i blocchi che
                 lo compongono, con anche alcuni dati.
+                <span id="windmillind"></span>
             </p>
+            <h2 class="titolo">MULINO A VENTO</h2>
         </div>
         <!------------------------------------------------ FOOTER ------------------------------------------------>
         <footer>
