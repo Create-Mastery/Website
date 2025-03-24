@@ -1,7 +1,6 @@
 const menuToggle = document.getElementById('menu-toggle');
 const navList = document.getElementById('nav-list');
 const navbar = document.getElementById('navbar');
-
 window.onscroll = function () {
     if (window.scrollY > 200) {
         navbar.classList.add('fixed');
