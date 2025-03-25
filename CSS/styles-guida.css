@@ -320,7 +320,8 @@ td {
 #windmillbearingrecipe,
 #waterwheelrecipe,
 #waterwheelexample,
-#bigwaterwheelrecipe {
+#bigwaterwheelrecipe,
+#handcrankrecipe {
     margin-left: 2%;
     border: #7695f0 3px solid;
     border-radius: 20px;
@@ -385,9 +386,16 @@ td {
         width: 100%;
         max-width: 100%;
     }
-    #sailstable tr td {
+    #sailstable tr td,
+    #summarytable tr td {
         width: 100%;
         font-size: 80%;
+    }
+    #summarytable td {
+        width: 20%;
+    }
+    #summarytable tr td {
+        font-size: 55%;
     }
 }
 @media (max-width: 550px) {
@@ -460,7 +468,9 @@ td {
     #waterwheelrecipe,
     #waterwheelexample,
     #bigwaterwheel,
-    #bigwaterwheelrecipe {
+    #bigwaterwheelrecipe,
+    #handcrank,
+    #handcrankrecipe {
         width: 100%;
         height: 100%;
         display: block;
