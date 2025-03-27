@@ -40,6 +40,7 @@ jobs:
         with:
           base-url-path: "https://createmastery.org"
           drop-html-extension: true
+          exclude-paths: /.well-known
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
